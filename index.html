@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="cardGame.js"></script>
+</head>
+<body>
+    <div class="header__container">
+    <header class="header">
+        <button class="header__settings">Настройки игры</button>       
+        <div class="header__timer"></div>       
+    </header>
+    </div>
+    <div class="container">
+    </div>
+    <div class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__close">
+                    <div class="firstLine"></div>
+                    <div class="twoLine"></div>
+                </div>
+                <div class="popup__title">Настройки игры</div>
+                <div class="popup__subtitle">Количество карт по горизнтали</div>
+                <div class="popup__settings">
+                    <div class="popup__horizontal">2</div>
+                    <div class="popup__horizontal">4</div>
+                    <div class="popup__horizontal">6</div>
+                    <div class="popup__horizontal">8</div>
+                    <div class="popup__horizontal">10</div>
+                </div>
+                <div class="popup__subtitle">Количество карт по вертикали</div>
+                <div class="popup__settings">
+                    <div class="popup__vertical">2</div>
+                    <div class="popup__vertical">4</div>
+                    <div class="popup__vertical">6</div>
+                    <div class="popup__vertical">8</div>
+                    <div class="popup__vertical">10</div> 
+                </div>
+                <div class="popup__subtitle">Время игры</div>
+                <div class="popup__input">
+                    <input type="tel" class="input"  step="10" value="120" minlength="1" maxlength="4">
+                    <div class="unit">сек</div>
+
+                </div>
+                <button class="popup__button">Начать игру</button>
+            </div>
+        </div>
+    </div>
+    <div class="popupWinGame">
+        <div class="popupWinGame__body">
+            <div class="popupWinGame__content">
+                <div class="popuWinGame__title">Поздравляю!</div>
+                <div class="popupWinGame__subtitle">Вы прошли игру</div>
+                <button class="popupWinGame__button">Начать новую игру</button>
+            </div>
+        </div>
+    </div>
+    <div class="popupLoseGame">
+        <div class="popupLoseGame__body">
+            <div class="popupLoseGame__content">
+                <div class="popuLoseGame__title"> Время игры истекло</div>
+                <button class="popupLoseGame__button">Начать новую игру</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
